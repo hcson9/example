@@ -19,25 +19,25 @@ package example;
  * @version 1.0
  * @since 1.0
  */
-public class Human extends Animal implements  Omnivore {
+public class Human extends Animal implements Omnivore {
 
   public Human(String name) {
     super(name);
   }
 
   @Override
-  public void move() {
-    System.out.println("이동한다.");
+  public void eat() {
+    eatAll();
   }
 
   @Override
   public void eatMeat() {
-    System.out.println("고기를 먹는다");
+    System.out.println(super.getName() + "이(가) 고기를 먹는다.");
   }
 
   @Override
   public void eatPlant() {
-    System.out.println("야채를 먹는다");
+    System.out.println(super.getName() + "이(가) 풀을 먹는다.");
   }
 
 }

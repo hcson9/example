@@ -26,12 +26,12 @@ public class Tiger extends Animal implements Carnivore {
   }
 
   @Override
-  public void move() {
-    System.out.println("달려든다.");
+  public void eat() {
+    eatMeat();
   }
 
   @Override
   public void eatMeat() {
-    System.out.println("고기를 먹는다.");
+    System.out.println(super.getName() + "이(가) 고기를 먹는다.");
   }
 }

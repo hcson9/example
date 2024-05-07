@@ -26,5 +26,9 @@ public abstract class Animal {
     this.name = name;
   }
 
-  public abstract void move();
+  public abstract void eat();
+
+  protected String getName() {
+    return name;
+  }
 }

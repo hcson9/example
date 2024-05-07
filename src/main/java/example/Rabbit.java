@@ -26,12 +26,12 @@ public class Rabbit extends Animal implements Herbivore {
   }
 
   @Override
-  public void move() {
-    System.out.println("이동한다.");
+  public void eat() {
+    eatPlant();
   }
 
   @Override
   public void eatPlant() {
-    System.out.println("풀을 먹는다.");
+    System.out.println(super.getName() + "이(가) 풀을 먹는다.");
   }
 }

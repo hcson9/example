@@ -19,9 +19,14 @@ package example;
  * @version 1.0
  * @since 1.0
  */
-public interface Omnivore extends Carnivore, Herbivore {
-  default void eatAll() {
-    eatMeat();
-    eatPlant();
+public class Main {
+
+  public static void main(String[] args) {
+    Animal tiger = new Tiger("호랭이");
+    tiger.eat();
+    Animal rabbit = new Rabbit("토끼");
+    rabbit.eat();
+    Animal humon = new Human("사람");
+    humon.eat();
   }
 }

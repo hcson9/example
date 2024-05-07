@@ -21,4 +21,5 @@ package example;
  */
 public interface Carnivore {
   void eatMeat();
+
 }
